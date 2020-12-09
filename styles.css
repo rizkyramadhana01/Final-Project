@@ -1,0 +1,350 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+header {
+    height: 50px;
+    background-color: #32e0c4;
+}
+header ul{
+    float: right;
+}
+header li{
+    padding: 15px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+header ul li a{
+    transition: .3s;
+}
+header ul li a:hover {
+    padding: 16px;
+    color:  #32e0c4;
+    background-color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.container::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.mobile-menu{
+    float: right;
+    display: none;
+    padding: 8px;
+    color: #212121;
+}
+.mobile-menu:hover{
+    cursor: pointer;
+}
+#check{
+    display: none;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -300px;
+    width: 300px;
+    background-color: rgba(13, 115, 119, .7);
+    transition: .3s;
+}
+.sidebar ul li a{
+    color: #fff;
+}
+.sidebar ul li{
+    padding: 24px;
+    transition: .3s;
+    color: white;
+}
+.sidebar ul li:hover{
+    background-color: #32e0c4;
+}
+#check:checked ~ .sidebar{
+    left: 0;
+}
+.banner{
+    background-image: url(cloude.png);
+    background-size: cover;
+    color: #0d7377;
+}
+.banner h1{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.banner a{
+    color: #0d7377;
+}
+section{
+    padding: 50px 0;
+}
+h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 4rem;
+}
+h2{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+}
+p{
+    font-family: 'Abel', sans-serif;
+    font-size: 1.5rem;
+}
+#interest h2{
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 20px;
+    position: relative;
+}
+#interest h2::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 120px;
+    height: 4px;
+    background-color: #212121;
+    left: calc(50% - 60px);
+}
+#interest{
+    background-color: #32e0c4;
+    padding-bottom: 20px;
+}
+#interest p{
+    text-align: center;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+#education{
+    background-color:  #32e0c4;
+    padding-top: 20px;
+}
+#education h2{
+    padding-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+#education h2::before{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 120px;
+    height: 4px;
+    background-color: #212121;
+    left: calc(50% - 60px);
+}
+#education p{
+    text-align: center;
+    line-height: 25px;
+    padding-top: 25px;
+    margin-bottom: 15px;
+}
+#employement{
+    background-color: #32e0c4;
+    padding-top: 20px;
+}
+#employement h2{
+    padding-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+#employement h2::before{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 120px;
+    height: 4px;
+    background-color:  #212121;
+    left: calc(50% - 60px);
+}
+#employement p{
+    text-align: center;
+    line-height: 25px;
+    padding-top: 25px;
+    margin-bottom: 15px;
+}
+#employement strong{
+    font-family: 'Abel', sans-serif;
+    font-size: 1.5rem;
+}
+#certificate{
+    background-color: #eeeeee;
+    padding-top: 20px;
+}
+#certificate h2{
+    padding-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+#certificate h2::before{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 120px;
+    height: 4px;
+    background-color:#212121;
+    left: calc(50% - 60px);
+}
+#certificate p{
+    text-align: center;
+    line-height: 25px;
+    padding-top: 25px;
+    margin-bottom: 15px;
+}
+#certificate strong{
+    font-family: 'Abel', sans-serif;
+    font-size: 1.5rem;
+}
+#skill{
+    background-color: #eeeeee;
+    padding-top: 20px;
+}
+#skill h2{
+    padding-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+#skill h2::before{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 120px;
+    height: 4px;
+    background-color:#212121;
+    left: calc(50% - 60px);
+}
+#skill .bar{
+    height: 30px;
+    background-color: white;
+    border: 1px solid black;
+    margin: 5px 0 20px 0;
+}
+.bar .value{
+    height: 30px;
+    background-color: #0d7377;
+    display: inline-block;
+    color: white;
+    text-align: center;
+}
+.html{
+    width: 80%;
+}
+.css{
+    width: 70%;
+}
+.c{
+    width: 95%;
+}
+.cpp{
+    width: 90%;
+}
+.php{
+    width: 60%;
+}
+#contact{
+    background-image: url(cloude.png);
+    color: #0d7377;
+    text-align: center;
+}
+#contact label{
+    font-family: 'Abel', sans-serif;
+    font-size: 1.5rem;
+}
+#contact button{
+    font-family: 'Abel', sans-serif;
+    font-size: 1rem;
+    background-color: #0d7377;
+    border-color: #32e0c4;
+    color: white;
+    padding: 2px;
+}
+footer{
+    background-color: #212121;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+footer .us{
+    text-align: center;
+    padding-top: 10px;
+}
+
+#galery{
+    color: #0d7377;
+    background-color: #eeeeee;
+    text-align: center;
+}
+
+.containerGalery{
+    width: 600px;
+    margin: auto;
+    border: 5px solid black;
+    line-height: 0;
+    overflow: auto;
+}
+
+.tumb{
+    width: 200px;
+    float: left;
+    line-height: 0;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+.tumb:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#galery button{
+    font-size: 1rem;
+    padding: 2px;
+    color: white;
+    background-color:  #0d7377;
+}
+
+#galery button:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+@media screen and (max-width: 900px){
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 1270px){
+    
+    .mobile-menu{
+        display: block;
+    }
+    header ul{
+        display: none;
+    }
+}
+
+@media (max-width: 600px){
+    .containerGalery{
+        width: 400px;
+    }
+    .big{
+        width: 400px;
+    }
+}
